@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    user-select: none;
+    background: #ecf0f3;
+}
+
+.dark{
+    background: #282c2f;
+}
+
+.container {
+    margin-left: 1.8em;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 13px 13px 20px #cbced1,
+        -13px -13px 20px #cec2c2;
+}
+.dark .container{
+    box-shadow: 13px 13px 20px #505860,
+        -13px -13px 20px #665959,
+        -13px -13px 20px #665959,
+        13px 13px 20px #505860;
+}
+
+
+.row button{
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    transition: .1s;
+    box-shadow: 5px 5px 8px #00000020,
+        -5px -5px 8px #ffff;
+    cursor: pointer;
+}
+.dark .row button{
+    box-shadow: 5px 5px 8px #634d4d66,
+        -5px -5px 8px rgba(168, 165, 165, 0.607);
+    background: #131313;
+    color: white;
+}
+
+.row button:hover {
+    box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1),
+        inset -5px -5px 8px #fff;
+    background: #fff;
+}
+.dark .row button:hover{
+    box-shadow: inset 5px 5px 8px rgba(205, 201, 201, 0.1),
+        inset -5px -5px 8px rgb(52, 51, 51);
+    background: rgb(8, 8, 8);
+}
+
+.display #screen {
+    margin-bottom: .5em;
+    width: auto;
+    height: 70px;
+    font-size: 35px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 4px 4px 4px #c2dcf7,
+        inset -4px -4px 4px #c1dbf5;
+}
+.dark .display #screen{
+    background: #686969;
+    color: white;
+    font-weight: 500;
+    border-radius: 6px;
+    box-shadow: inset 4px 4px 4px #f79090,
+        inset -4px -4px 4px #f7aaaa;
+}
+
+#eval {
+    background: #33ccff;
+    color: #fff;
+    box-shadow: inset 5px 5px 8px #66d9ff,
+        inset -5px -5px 8px #00ace6;
+}
+#eval:hover {
+    box-shadow: inset 5px 5px 8px #a187f5,
+        inset -5px -5px 8px #ac97f4;
+}
+
+#ac {
+    background: #33cc33;
+    color: #fff;
+}
+#ac:hover {
+    box-shadow: inset 5px 5px 8px #95e540,
+        inset -5px -5px 8px #95e540;
+}
+
+#ce {
+    background: #ff3399;
+    color: #fff;
+}
+#ce:hover {
+    box-shadow: inset 5px 5px 8px #f061e6,
+        inset -5px -5px 8px #f061e6;
+}
+
+
+.toggleBtn{
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    background: black;
+    border-radius: 50%;
+    top: 50px;
+    right: 100px;
+    border: 2px solid white;
+    box-shadow:  5px 5px 10px #8f7b8f,
+                 inset -5px -5px 10px #131313;
+}
+.dark .toggleBtn{
+    background: white;
+    border: 2px solid rgb(89, 82, 82);
+    box-shadow:  5px 5px 10px #a292a2,
+                 inset -5px -5px 10px #ffffff;
+
+}
